@@ -18,7 +18,7 @@ if st.button("ログアウト"):
 else:
     st.title("解除プログラム")
 
-target_img = cv2.imread("image/peach.jpg")
+target_img = cv2.imread("Unlock_your_phone/image/peach.jpg")
 uploaded_file = st.file_uploader("ドロップしてください",type=["jpg","png","jpeg"])
 
 if target_img is None:
