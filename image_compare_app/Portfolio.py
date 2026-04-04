@@ -25,11 +25,11 @@ if uploaded_file is not None:
     diff = cv2.absdiff(target_img, compile_img)
     result = np.sum(diff)
     if result < 10000:
-        st.success("正解！！")
-        st.balloons()
-    else:
-        st.image(target_img, caption="基準画像", channels="BGR")
-     　　st.write(f"差分スコア: {result}")
-        st.write("("※差分が小さいほど一致しています")
+    st.success("正解！！")
+    st.balloons()
+else:
+    st.error("残念")
+    st.write(f"差分スコア: {result}")
+    st.write("("※差分が小さいほど一致しています")
 else:
     st.info("アップロードをしてください")
