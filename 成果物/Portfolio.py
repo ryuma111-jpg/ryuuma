@@ -1,7 +1,7 @@
 import streamlit as st
 import cv2
 import numpy as np
-
+image_path = "成果物/image/peach.jpg"
 target_img = cv2.imread("image/peach.jpg")
 compare_img = cv2.imread("image/peach.jpg")
 if target_img is not None and compare_img is not None:
