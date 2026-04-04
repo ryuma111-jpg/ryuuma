@@ -9,7 +9,7 @@ st.title("画像一致判定プログラム!")
 
 
 target_img = cv2.imread("image_compare_app/image/peach.jpg")
- st.image(target_img, caption="基準画像", channels="BGR")
+st.image(target_img, caption="基準画像", channels="BGR")
 if target_img is None:
     st.error("基準画像が読み込めません")
     st.stop()
@@ -29,7 +29,7 @@ if uploaded_file is not None:
         st.balloons()
     else:
         st.image(target_img, caption="基準画像", channels="BGR")
-       st.write(f"差分スコア: {result}")
+     　　st.write(f"差分スコア: {result}")
         st.write("("※差分が小さいほど一致しています")
 else:
     st.info("アップロードをしてください")
