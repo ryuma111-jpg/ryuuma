@@ -25,8 +25,8 @@ if uploaded_file is not None:
     diff = cv2.absdiff(target_img, compile_img)
     result = np.sum(diff)
     if result < 10000:
-    st.success("正解！！")
-    st.balloons()
+        st.success("正解！！")
+        st.balloons()
 else:
     st.error("残念")
     st.write(f"差分スコア: {result}")
