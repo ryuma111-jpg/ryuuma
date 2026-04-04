@@ -3,7 +3,10 @@ import cv2
 import numpy as np
 import os
 
-image_path = "成果物/image/peach.jpg"
+
+target_img = cv2.imread("image/peach.jpg")
+compare_img = cv2.imread("image/peach.jpg")
+
 
 st.title("画像一致判定プログラム")
 if result == 0:
