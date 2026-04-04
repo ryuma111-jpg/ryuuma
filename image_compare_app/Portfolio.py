@@ -27,7 +27,7 @@ if uploaded_file is not None:
     if result < 10000:
         st.success("正解！！")
         st.balloons()
-else:
+    else:
     st.error("残念")
     st.write(f"差分スコア: {result}")
     st.write("※差分が小さいほど一致しています")
