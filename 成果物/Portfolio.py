@@ -4,8 +4,10 @@ import numpy as np
 import os
 
 
-target_img = cv2.imread("image/peach.jpg")
-compare_img = cv2.imread("image/peach.jpg")
+# 「成果物」フォルダの中から見た相対パスにする
+target_img = cv2.imread("成果物/image/peach.jpg")
+compare_img = cv2.imread("成果物/image/peach.jpg")
+
 
 
 st.title("画像一致判定プログラム")
