@@ -26,6 +26,8 @@ if uploaded_file is not None:
         st.success("正解！！")
         st.balloons()
     else:
+        st.image(target_img, caption="基準画像", channels="BGR")
        st.write(f"差分スコア: {result}")
+        st.write("("※差分が小さいほど一致しています")
 else:
     st.info("アップロードをしてください")
