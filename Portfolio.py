@@ -3,7 +3,6 @@ import cv2
 import numpy as np
 import os
 
-# 今のGitHubの構成（トップにimageフォルダがある）に合わせる
 image_path = "image/peach.jpg"
 
 st.title("画像一致判定プログラム")
@@ -23,7 +22,3 @@ if os.path.exists(image_path):
             st.balloons()
         else:
             st.error("画像が一致しません。")
-    else:
-        st.error("画像の読み込みに失敗しました。")
-else:
-    st.error(f"画像が見つかりません。探している場所: {image_path}")
