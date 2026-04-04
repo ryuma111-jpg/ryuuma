@@ -11,8 +11,4 @@ if result == 0:
         st.balloons()
 else:
         st.error("画像が一致しません。")
-else:
-        st.error("画像の読み込みに失敗しました（データ形式を確認してください）")
-else:
-        st.error(f"画像ファイルが見つかりません。パスを確認してください: {image_path}")
 
