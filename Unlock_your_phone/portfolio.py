@@ -18,7 +18,7 @@ if st.session_state.logged_in:
 
 else:
     st.title("解除プログラム")
-    image_paths = ["image/peach.jpg", "image/peach1.webp", "image/peach2.jpg"]
+    image_paths = ["Unlock_your_phone/image/peach.jpg", "Unlock_your_phone/image/peach1.webp", "Unlock_your_phone/image/peach2.jpg"]
     targets = [cv2.imread(p) for p in image_paths]
 
     if any(t is None for t in targets):
